@@ -28,6 +28,10 @@ nav{
     padding-left:20px;
     padding-right:20px;
   }
+
+.navbar-collapse > ul{
+  text-align :center;
+}
 nav a{
     color : white;
     text-decoration: none;
