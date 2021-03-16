@@ -7,6 +7,10 @@ body{
   backdrop-filter: blur(2rem);
 }
 
+.full-screen {
+  height: 100vh; 
+  width: 100vw;
+}
 
 .container{
   margin: 0 auto;
@@ -60,7 +64,7 @@ nav a:active{
 }
 
 .tech-stack{
-  background-color: #ffeb4c;
+  background-color: white;
 }
 
 .testimonials{
@@ -69,6 +73,6 @@ nav a:active{
 }
 
 .contact-us{
-  background-color: #ffeb4c;
+  background-color: white;
 }
 
