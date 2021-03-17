@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:100');
 
 body{
   margin: 0;
-  font-family:  'Alegreya Sans', sans-serif;
-  font-weight:500;
-  backdrop-filter: blur(2rem);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .full-screen {
@@ -65,14 +62,20 @@ nav a:active{
 
 .tech-stack{
   background-color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .testimonials{
-  background-color: rgba(0, 0, 0, .85);  
-  color : whitesmoke;
+  background-color: white;
+  color : black;
 }
 
 .contact-us{
   background-color: white;
 }
 
+.tech-stack-card{
+  border-radius: 0px 0px 0px 0px;
+  background-color:#f7f7f9;
+}
