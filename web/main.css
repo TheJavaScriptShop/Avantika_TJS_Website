@@ -17,6 +17,7 @@ body{
 	height: 43px;
 }
 .site-header {
+  /* for making navbar translucent */
   background-color: rgba(0, 0, 0, .85);
   backdrop-filter: saturate(180%) blur(20px);
 }
