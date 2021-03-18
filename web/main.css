@@ -57,8 +57,11 @@ nav a:active{
   }
 
 .how-we-work{
-  background-color: rgba(0, 0, 0, .85);
-  color : whitesmoke;
+  background-color:#262626;
+  font-size: 32px;
+  color: white;
+  position: relative;
+  display: block;
 }
 
 .tech-stack{
@@ -79,4 +82,70 @@ nav a:active{
 .tech-stack-card{
   border-radius: 0px 0px 0px 0px;
   background-color:#f7f7f9;
+}
+
+
+/* Scroll Magic CSS starts here */
+
+
+.scroll-magic-h1 {
+  font-size: 32px;
+  position: relative;
+  display: block;
+  top: 40%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#pinContainer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.panel {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+
+#pinMaster {
+  position: relative;
+}
+
+.zero {
+  background-color:#262626;
+  color: white;
+}
+
+.one {
+  background-color: #ffeb4c;
+  color : black
+}
+.two {
+  background-color:#262626;
+  color: white;
+
+}
+.three {
+  background-color: #ffeb4c;
+  color : black
+
+}
+.four {
+  background-color : #262626;
+  color: white;
+
+}
+
+.five {
+  background-color: #ffeb4c;
+  color : black
+
+}
+.six {
+  background-color: #262626;
+  color: white;
+
 }
