@@ -23,7 +23,6 @@ body{
 }
 nav{
   position: absolute;
-  
 }
 
 .navbar-nav > li{
@@ -62,6 +61,21 @@ nav a:active{
   color: white;
   position: relative;
   display: block;
+}
+
+.rotate1 {
+  animation: rotation1 8s infinite linear;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+}
+@keyframes rotation1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 .tech-stack{
@@ -146,6 +160,10 @@ nav a:active{
 }
 .six {
   background-color: #262626;
-  color: white;
+}
 
+.product_iteration_spinner {
+    margin: 10%;
+    padding: 10%;
+  }
 }
