@@ -1,49 +1,44 @@
-console.clear();
-var controller = new ScrollMagic.Controller();
-var sections = document.querySelectorAll("section");
-var tl = new TimelineMax();
-var offset = window.innerHeight;
+$(function () { // wait for document ready
+    // init
+    var controller = new ScrollMagic.Controller();
 
-for (let i = 1; i < sections.length; i++) {
-  tl.from(sections[i], 1, { xPercent:100, ease: Linear.easeNone }, "+=1");
-}
+    // define movement of panels
+    var wipeAnimation = new TimelineMax()
+        // animate to second panel
+        .to("#slideContainer", 0.5, {z: -150})		// move back in 3D space
+        .to("#slideContainer", 1,   {x: "-14.286%"})	// move in to first panel
+        .to("#slideContainer", 0.5, {z: 0})				// move back to origin in 3D space
+        // animate to third panel
+        .to("#slideContainer", 0.5, {z: -150, delay: 1})
+        .to("#slideContainer", 1,   {x: "-28.57%"})
+        .to("#slideContainer", 0.5, {z: 0})
+        // animate to forth panel
+        .to("#slideContainer", 0.5, {z: -150, delay: 1})
+        .to("#slideContainer", 1,   {x: "-42.86%"})
+        .to("#slideContainer", 0.5, {z: 0});
+        // animate to fifth panel
+        wipeAnimation
+        .to("#slideContainer", 0.5, {z: -150})		// move back in 3D space
+        .to("#slideContainer", 1,   {x: "-57.14%"})	// move in to first panel
+        .to("#slideContainer", 0.5, {z: 0})				// move back to origin in 3D space
+        // animate to sixth panel
+        .to("#slideContainer", 0.5, {z: -150, delay: 1})
+        .to("#slideContainer", 1,   {x: "-71.43%"})
+        .to("#slideContainer", 0.5, {z: 0})
+        // animate to seventh panel
+        .to("#slideContainer", 0.5, {z: -150, delay: 1})
+        .to("#slideContainer", 1,   {x: "-85.716%"})
+        .to("#slideContainer", 0.5, {z: 0});
 
-new ScrollMagic.Scene({
-  triggerElement: "#pinMaster",
-  triggerHook: "onLeave",
-  duration: "500%"
-})
-  .setPin("#pinMaster")
-  .setTween(tl)
-  .addTo(controller);
-
-$("section").each(function(i) {
-  let target1 = $(this).find("h1");
-  let split = new SplitText(target1, { type: "chars" });
-  var tl = new TimelineMax();
-  tl.staggerFrom(
-    split.chars,
-    0.5, 
-    { opacity: 0, scale: 0.5, y: -100, ease: Bounce.easeOut },
-    0.05
-  );
-
-  new ScrollMagic.Scene({
-    triggerElement: "#pinMaster",
-    triggerHook: 0,
-    offset: i * offset
-  })
-    .setTween(tl)
-    .addTo(controller)
-    .addIndicators({
-      colorTrigger: "white",
-      colorStart: "white",
-      colorEnd: "white",
-      indent: 40
-    });
+    // create scene to pin and link animation
+    new ScrollMagic.Scene({
+            triggerElement: "#pinContainer",
+            triggerHook: "onLeave",
+            duration: "800%"
+        })
+        .setPin("#pinContainer")
+        .setTween(wipeAnimation)
+        //.setTween(wipeAnimation_2)
+        .addIndicators() // add indicators (requires plugin)
+        .addTo(controller);
 });
-
-
-
-
-
