@@ -75,7 +75,7 @@ nav a:active{
 }
 
 .re_text_animation_2 {
-  font-size: 60px;
+  /* font-size: 60px; */
   letter-spacing: 4px;
   color : #ffeb4c;
   position: relative;
@@ -113,7 +113,7 @@ nav a:active{
 .how-we-work{
   background-color:#262626;
   font-size: 32px;
-  color: white;
+  color: ffeb4c;
   position: relative;
   display: block;
 }
@@ -170,6 +170,7 @@ nav a:active{
   perspective: 1000;
   background-color:#262626;
   margin : 0px;
+  padding : 0;
 }
 
 #slideContainer {
@@ -181,45 +182,50 @@ nav a:active{
   height: 100%;
 	width: 14.2858%; /* relative to parent -> 25% of 400% = 100% of window width */
 	float: left;
-  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .zero {
-  background-color:hsl(0, 0%, 15%);
+  background-color: #333333;
   color: white;
 }
 
 .one {
   background-color: #ffeb4c;
-  color : black
+  color :#333333;
 }
 .two {
-  background-color:#ffeb4c;
-  color: black;
+  background-color: #333333;
+  color: #ffeb4c;
 
 }
 .three {
   background-color: #ffeb4c;
-  color :black
+  color :#333333;
 
 }
 .four {
-  background-color : #ffeb4c;
-  color: black;
-
+  background-color: #333333;
+  color: #ffeb4c;
 }
 
 .five {
   background-color: #ffeb4c;
-  color :black;
+  color : #333333;
 }
 
 .six {
-  background-color: #ffeb4c;
-  color: black;
+  background-color: #333333;
+  color: #ffeb4c;
 }
 
 .product_iteration_spinner {
     margin: 10%;
     padding: 10%;
   }
+
+.row {
+  margin : 0  !important;
+}
