@@ -8,7 +8,7 @@ body{
 }
 
 .full-screen {
-  height: 100vh; 
+  height: 100vh;
   width: 100vw;
 }
 
@@ -48,7 +48,7 @@ nav a:active{
 }
 
 .intro-remote-eng {
-    background-color: #ffeb4c;
+    background-color: #faec4b;
   }
 
 .re_text_animation_1 {
@@ -77,7 +77,7 @@ nav a:active{
 .re_text_animation_2 {
   /* font-size: 60px; */
   letter-spacing: 4px;
-  color : #ffeb4c;
+  color : #faec4b;
   position: relative;
   -webkit-text-stroke: 0.2vw #000000;
   text-transform: uppercase;
@@ -91,7 +91,7 @@ nav a:active{
   width: 0;
   height: 100%;
   color : #000000;
-  -webkit-text-stroke: 0vw  #ffeb4c;
+  -webkit-text-stroke: 0vw  #faec4b;
   border-right: 4px solid;
   overflow : hidden;
   animation: animate 7s linear forwards;
@@ -193,32 +193,32 @@ nav a:active{
 }
 
 .one {
-  background-color: #ffeb4c;
+  background-color: #faec4b;
   color :#333333;
 }
 .two {
   background-color: #333333;
-  color: #ffeb4c;
+  color: #faec4b;
 
 }
 .three {
-  background-color: #ffeb4c;
+  background-color: #faec4b;
   color :#333333;
 
 }
 .four {
   background-color: #333333;
-  color: #ffeb4c;
+  color: #faec4b;
 }
 
 .five {
-  background-color: #ffeb4c;
+  background-color: #faec4b;
   color : #333333;
 }
 
 .six {
   background-color: #333333;
-  color: #ffeb4c;
+  color: #faec4b;
 }
 
 .product_iteration_spinner {
@@ -228,4 +228,48 @@ nav a:active{
 
 .row {
   margin : 0  !important;
+}
+
+.banner-on-load {
+  background-color: #000000;
+  justify-content: end;
+  height: 102px;
+  background: linear-gradient(90deg, #000000 50%, #faec4b 50%);
+  border-bottom: 2px solid #000000;
+}
+
+.banner-animation {
+  background-color: #000000;
+  -webkit-animation: fadeout 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeout 4s; /* Firefox < 16 */
+  -ms-animation: fadeout 4s; /* Internet Explorer */
+  animation: fadeout 4s;
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeout{
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+.banner-image {
+  width: 500px;
+  height: 100px;
 }

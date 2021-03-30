@@ -40,4 +40,18 @@ $(function () { // wait for document ready
         .setTween(wipeAnimation)
         //.setTween(wipeAnimation_2)
         .addTo(controller);
+
+
+
+    //Navbar class toggle
+
+    var scene = new ScrollMagic.Scene({ triggerElement: "#nav-container", offset: 300 })
+    // trigger animation by adding a css class
+    scene.on("enter", (event) => {
+        console.log("entered");
+        $("#initial-banner").addClass("d-none");
+        $("#main-nav").removeClass("d-none");
+    })
+        .addTo(controller);
+
 });
