@@ -1,6 +1,9 @@
+html,body {
+  height: 100%;
+  margin : 0px;
+}
 
 body{
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -9,13 +12,6 @@ body{
   width: 100vw;
 }
 
-.container{
-  margin: 0 auto;
-  padding-top: 7px;
-  background-color: rgb(51,51,51);
-	width: 100%;
-	height: 43px;
-}
 .site-header {
   /* for making navbar translucent */
   background-color: rgba(0, 0, 0, .85);
@@ -79,7 +75,7 @@ nav a:active{
 }
 
 .re_text_animation_2 {
-  font-size: 60px;
+  /* font-size: 60px; */
   letter-spacing: 4px;
   color : #ffeb4c;
   position: relative;
@@ -98,7 +94,7 @@ nav a:active{
   -webkit-text-stroke: 0vw  #ffeb4c;
   border-right: 4px solid;
   overflow : hidden;
-  animation: animate 7s linear infinite;
+  animation: animate 7s linear forwards;
 }
 
 @keyframes animate
@@ -117,7 +113,7 @@ nav a:active{
 .how-we-work{
   background-color:#262626;
   font-size: 32px;
-  color: white;
+  color: ffeb4c;
   position: relative;
   display: block;
 }
@@ -158,71 +154,78 @@ nav a:active{
 }
 
 
-/* Scroll Magic CSS starts here */
+/* Slides scrollmagic CSS starts here */
 
 
-.scroll-magic-h1 {
-  font-size: 32px;
-  position: relative;
-  display: block;
-  top: 40%;
-  text-align: center;
-  text-transform: uppercase;
+.slides-h1 {
+  margin-bottom: 50% 50% 50% 50%;
+  
 }
 
 #pinContainer {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  position: relative;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  background-color:#262626;
+  margin : 0px;
+  padding : 0;
+}
+
+#slideContainer {
+  width: 700%; /* to contain 7 panels, each with 100% of window width */
+	height: 100%;
+  margin : 0px;
 }
 .panel {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-}
-
-
-#pinMaster {
-  position: relative;
+  height: 100%;
+	width: 14.2858%; /* relative to parent -> 25% of 400% = 100% of window width */
+	float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .zero {
-  background-color:#262626;
+  background-color: #333333;
   color: white;
 }
 
 .one {
   background-color: #ffeb4c;
-  color : black
+  color :#333333;
 }
 .two {
-  background-color:#262626;
-  color: white;
+  background-color: #333333;
+  color: #ffeb4c;
 
 }
 .three {
   background-color: #ffeb4c;
-  color : black
+  color :#333333;
 
 }
 .four {
-  background-color : #262626;
-  color: white;
-
+  background-color: #333333;
+  color: #ffeb4c;
 }
 
 .five {
   background-color: #ffeb4c;
-  color : black
-
+  color : #333333;
 }
+
 .six {
-  background-color: #262626;
+  background-color: #333333;
+  color: #ffeb4c;
 }
 
 .product_iteration_spinner {
     margin: 10%;
     padding: 10%;
   }
+
+.row {
+  margin : 0  !important;
 }

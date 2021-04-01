@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,20 +48,67 @@
 
     <!-- Grid layout starts here-->
 
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
 
         <!-- Remote Engineering Section-->
         <div class="full-screen intro-remote-eng row justify-content-center px-5 d-flex align-items-center">
 
-            <div class="col-xs-12 col-md-7">
+            <!-- xs breakpoint -->
+            <div class="col-xs-12 d-block d-sm-none">
                 <div>
-                    <h1 class="re_text_animation_2" data-text="Remote&nbsp;Engineering">Remote  Engineering</h1>
+                    <h1 style="font-size:31px" class="re_text_animation_2" data-text="Remote&nbsp;Engineering">Remote  Engineering</h1>
+                    <p>Description on Remote Engineering</p>
                 </div>
-                <p>Description on Remote Engineering</p>
             </div>
-            <div class="col-xs-12 col-md-5">
+            <div class="col-xs-12 d-block d-sm-none">
                 <img src="./assets/undraw_Freelancer_re_irh4.svg" alt="" height="300" width="500">
             </div>
+
+            <!-- sm breakpoint -->
+            <div class="col-sm-12 d-none d-sm-block d-md-none">
+                <div>
+                    <h1 style="font-size:35px" class="re_text_animation_2" data-text="Remote&nbsp;Engineering">Remote  Engineering</h1>
+                    <p>Description on Remote Engineering</p>
+                </div>
+            </div>
+            <div class="col-sm-12 d-none d-sm-block d-md-none">
+                <img src="./assets/undraw_Freelancer_re_irh4.svg" alt="" height="300" width="500">
+            </div>
+
+            <!-- md breakpoint -->
+            <div class="col-md-6 d-none d-md-block d-lg-none">
+                <div>
+                    <h1 style="font-size:30px" class="re_text_animation_2" data-text="Remote&nbsp;Engineering">Remote  Engineering</h1>
+                    <p>Description on Remote Engineering</p>
+                </div>
+            </div>
+            <div class="col-md-6 d-none d-md-block d-lg-none">
+                <img src="./assets/undraw_Freelancer_re_irh4.svg" alt="" height="300" width="500">
+            </div>
+
+            <!-- lg breakpoint -->
+            <div class="col-lg-7 d-none d-lg-block d-xl-none">
+                <div>
+                    <h1 style="font-size:38px" class="re_text_animation_2" data-text="Remote&nbsp;Engineering">Remote  Engineering</h1>
+                    <p>Description on Remote Engineering</p>
+                </div>
+            </div>
+            <div class="col-lg-5 d-none d-lg-block d-xl-none">
+                <img src="./assets/undraw_Freelancer_re_irh4.svg" alt="" height="300" width="500">
+            </div>
+
+            <!-- xl breakpoint -->
+            <div class="col-xs-6 d-none d-xl-block">
+                <div>
+                    <h1 style="font-size:55px" class="re_text_animation_2" data-text="Remote&nbsp;Engineering">Remote  Engineering</h1>
+                    <p>Description on Remote Engineering</p> 
+                </div>
+            </div>
+            <div class="col-xs-6 d-none d-xl-block">
+                <img src="./assets/undraw_Freelancer_re_irh4.svg" alt="" height="300" width="500">
+            </div>
+
+
         </div>
 
         <!-- How we work Section-->
@@ -77,10 +124,10 @@
             </div>
         </div> -->
 
-
+        
         <!-- Horizontal scroll for project lifecycle -->
-        <div id="pinMaster">
-            <div id="pinContainer">
+        <div id="pinContainer">
+            <div id="slideContainer">
                 <section class="panel zero">
                     <div class="full-screen how-we-work row px-5 d-flex align-items-center">
                         <div class="col-xs-12 col-md-6">
@@ -116,45 +163,26 @@
                     </div>
                 </section>
                 <section class="panel one">
-                    <h1 class="scroll-magic-h1">Onboarding</h1>
+                    <h1 class="slides-h1">Onboarding</h1>
                 </section>
                 <section class="panel two">
-                    <h1 class="scroll-magic-h1"> Requirement Gathering</h1>
+                    <h1 class="slides-h1"> Requirement Gathering</h1>
                 </section>
                 <section class="panel three">
-                    <h1 class="scroll-magic-h1">Efforts/Time Estimates & Analysis</h1>
+                    <h1 class="slides-h1">Efforts/Time Estimates & Analysis</h1>
                 </section>
                 <section class="panel four">
-                    <h1 class="scroll-magic-h1">Build</h1>
+                    <h1 class="slides-h1">Build</h1>
                 </section>
                 <section class="panel five">
-                    <h1 class="scroll-magic-h1">Testing</h1>
+                    <h1 class="slides-h1">Testing</h1>
                 </section>
                 <section class="panel six">
-                    <h1 class="scroll-magic-h1">Go-Live</h1>
+                    <h1 class="slides-h1">Go-Live</h1>
                 </section>
             </div>
         </div>
 
-        <!-- Projects Completed Section-->
-
-        <!-- <div class=" card-deck tech-stack row justify-content-between px-5 d-flex align-items-center">
-            <div class="col-xs-12 col-md-6"> 
-                <div class="card text-center text-white bg-dark" >
-                    <div class="card-body"> 
-                        <h2 class="card-text">What we have done so far...</h2> 
-                    </div>
-                    <img src ="./assets/undraw_project_completed_w0oq.svg" alt="" height="250" width="250"
-                    class="card-img-top" >
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6"> 
-                <div class="card text-center">
-                    <img src ="./assets/tech_stack.png" alt="" >
-                </div>
-            </div>
-        </div>
--->
         <div class=" card-deck tech-stack">
             <div class=" tech-stack-card card text-center  py-3">
                 <div class="card-body">
@@ -184,14 +212,14 @@
                 <div class="col-xs-12 col-lg-8 card">
                     <div class="card-columns">
                         <div class="card">
-                            <img class="card-img-top" src=".../100px160/" alt="Card image cap">
+                            <!-- <img class="card-img-top" src=".../100px160/" alt="Card image cap"> -->
                             <div class="card-body">
                                 <h5 class="card-title">Testimonial 1</h5>
                             </div>
                         </div>
 
                         <div class="card">
-                            <img class="card-img-top" src=".../100px160/" alt="Card image cap">
+                            <!-- <img class="card-img-top" src=".../100px160/" alt="Card image cap"> -->
                             <div class="card-body">
                                 <h4 class="card-title">Testimonial 2</h4>
                                 <p class="card-text">This is a longer card with supporting text below as a natural
@@ -221,8 +249,8 @@
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>
     <script src="main.js"></script>
