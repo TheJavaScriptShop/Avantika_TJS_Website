@@ -135,10 +135,64 @@ nav a:active{
 
 .tech-stack{
   height: 100vh;
-  background-color: #262626;
+  background-color: #ffeb4c;
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
+.tech-stack-card{
+  border-radius: 0px 0px 0px 0px;
+  background-color: #000000;
+  color : #ffeb4c;
+}
+
+.tech-icon {
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.tech-icon:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+.icon-Container {
+  display: flex;
+}
+#element-1, #element-2, #element-3, #element-4, #element-5 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+#element-1 {
+  top: 30%;
+  left: 20%; 
+}
+
+#element-2 {
+  top: 40%;
+  left: 30%;
+}
+
+#element-3 {
+  top: 70%;
+  left: 50%;
+}
+
+#element-4 {
+  top: 50%;
+  left: 85%;
+}
+
+#element-5 {
+  top: 20%;
+  left: 65%;
+}
+
 
 .testimonials{
   background-color: #262626;
@@ -149,11 +203,6 @@ nav a:active{
   background-color: white;
 }
 
-.tech-stack-card{
-  border-radius: 0px 0px 0px 0px;
-  background-color: #262626;
-  color : #ffeb4c;
-}
 
 
 /* Slides scrollmagic CSS starts here */
