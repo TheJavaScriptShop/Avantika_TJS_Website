@@ -17,8 +17,14 @@
 <body>
 
     <!-- Navigation Bar-->
+
+    <!-- Banner on site loading -->
+    <div id="initial-banner" class="banner-on-load">
+        <img class="mx-auto d-block banner-image banner-animation" src="/assets/TJS_banner.png">
+    </div>
     <!-- Logo -->
-    <nav class="site-header navbar navbar-expand-lg navbar-dark sticky-top ">
+    <div id="nav-container">
+      <nav id="main-nav" class="site-header navbar navbar-expand-lg fixed-top navbar-dark d-none">
         <div class="navbar-brand d-none d-lg-block">
             <img class="logo" class="align-middle mr-2" width="35" height="35" src="./assets/TJS_logo.jpeg">
         </div>
@@ -44,6 +50,7 @@
             </ul>
         </div>
     </nav>
+</div>
 
 
     <!-- Grid layout starts here-->
