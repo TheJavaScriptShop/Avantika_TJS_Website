@@ -134,23 +134,140 @@ nav a:active{
 }
 
 .tech-stack{
-  background-color: white;
+  height: 100vh;
+  background-color: #ffeb4c;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
+.tech-stack-card{
+  border-radius: 0px 0px 0px 0px;
+  background-color: #000000;
+  color : #ffeb4c;
+}
+
+.tech-icon {
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.tech-icon:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+.icon-Container {
+  display: flex;
+}
+#element-1, #element-2, #element-3, #element-4, #element-5 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+#element-1 {
+  top: 40%;
+  left: 20%; 
+}
+
+#element-2 {
+  top: 15%;
+  left: 30%;
+}
+
+#element-3 {
+  top: 70%;
+  left: 50%;
+}
+
+#element-4 {
+  top: 50%;
+  left: 75%;
+}
+
+#element-5 {
+  top: 20%;
+  left: 65%;
+}
+
+
 .testimonials{
-  background-color: white;
+  background-color:#333333;
   color : black;
 }
 
-.contact-us{
-  background-color: white;
+
+.box{
+  width: 500px;
+  border-radius: 15px;
+  margin: 10px auto;
+  background: #faec4b;
+  color: #333333;
+  padding: 20px;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  
 }
 
-.tech-stack-card{
-  border-radius: 0px 0px 0px 0px;
-  background-color:#f7f7f9;
+/* right speech bubble */
+.right-box:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid #faec4b;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #faec4b;
+  border-bottom: 15px solid transparent;
+  right: -16px;
+  top: 0px;
+}
+
+
+/* left speech bubble   */
+.left-box:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 15px solid #faec4b;
+  border-top: 15px solid #faec4b;
+  border-bottom: 15px solid transparent;
+  left: -16px;
+  top: 0px;
+}
+
+
+
+#reveal1, #reveal2, #reveal3 {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+       -moz-transform: scale(0.9);
+          -ms-transform: scale(0.9);
+           -o-transform: scale(0.9);
+                  transform: scale(0.9);
+  -webkit-transition: all 1s ease-in-out;
+       -moz-transition: all 1s ease-in-out;
+          -ms-transition: all 1s ease-in-out;
+           -o-transition: all 1s ease-in-out;
+                  transition: all 1s ease-in-out;
+}
+#reveal1.visible, #reveal2.visible, #reveal3.visible {
+  opacity: 1;
+  -webkit-transform: none;
+       -moz-transform: none;
+          -ms-transform: none;
+           -o-transform: none;
+                  transform: none;
+}
+
+.contact-us{
+  background-color:#faec4b;
 }
 
 
@@ -273,3 +390,15 @@ nav a:active{
   width: 500px;
   height: 100px;
 }
+
+
+.tooltip .tooltip-inner{
+  max-width:310px;
+  padding:10px 8px;
+  color: #faec4b ;
+  text-align:center;
+  background-color : #333333;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  border-radius:20px;
+  }
