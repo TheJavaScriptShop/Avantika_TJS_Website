@@ -113,7 +113,7 @@ nav a:active{
 .how-we-work{
   background-color:#262626;
   font-size: 32px;
-  color: ffeb4c;
+  color: #ffeb4c;
   position: relative;
   display: block;
 }
@@ -135,14 +135,18 @@ nav a:active{
 
 .tech-stack{
   height: 100vh;
-  background-color: #ffeb4c;
+  /* background-color: #000000; */
+  /* background-image: linear-gradient(red, yellow); */
+  background-image: linear-gradient(rgb(0,0,0) , rgb(0,19,43));
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
+
 .tech-stack-card{
   border-radius: 0px 0px 0px 0px;
-  background-color: #000000;
+  /* background-color: #000000; */
+  background-image: linear-gradient(rgb(0,0,0) , rgb(0,19,43));
   color : #ffeb4c;
 }
 
@@ -191,30 +195,40 @@ nav a:active{
 #element-5 {
   top: 20%;
   left: 65%;
-}
+}  /* width: 500px; */
+
 
 
 .testimonials{
   background-color:#333333;
   color : black;
+  background-attachment: scroll;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  overflow: auto;
+  background-image: url('/assets/Whatsapp-Wallpaper-120.jpeg');
+  backdrop-filter: blur(5px);
 }
 
 
 .box{
-  width: 500px;
   border-radius: 15px;
-  margin: 10px auto;
+  /* margin: 10px auto; */
   background: #faec4b;
   color: #333333;
   padding: 20px;
   text-align: center;
   font-weight: 500;
-  position: relative;
+  /* position: relative; */
+  /* display: block; */
+  /* float: left; */
   
 }
 
+
 /* right speech bubble */
-.right-box:before {
+.right-box:after {
   content: "";
   width: 0px;
   height: 0px;
@@ -225,6 +239,7 @@ nav a:active{
   border-bottom: 15px solid transparent;
   right: -16px;
   top: 0px;
+  /* float:left; */
 }
 
 
@@ -240,11 +255,16 @@ nav a:active{
   border-bottom: 15px solid transparent;
   left: -16px;
   top: 0px;
+  /* float: right; */
+}
+
+.spacer {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 
-
-#reveal1, #reveal2, #reveal3 {
+#reveal1, #reveal2, #reveal3, #reveal4, #reveal5,#reveal6,#reveal7 {
   opacity: 0;
   -webkit-transform: scale(0.9);
        -moz-transform: scale(0.9);
@@ -257,7 +277,7 @@ nav a:active{
            -o-transition: all 1s ease-in-out;
                   transition: all 1s ease-in-out;
 }
-#reveal1.visible, #reveal2.visible, #reveal3.visible {
+#reveal1.visible, #reveal2.visible, #reveal3.visible, #reveal4.visible, #reveal5.visible, #reveal6.visible, #reveal7.visible  {
   opacity: 1;
   -webkit-transform: none;
        -moz-transform: none;
@@ -267,7 +287,7 @@ nav a:active{
 }
 
 .contact-us{
-  background-color:#faec4b;
+  background-color:#faec4b ;
 }
 
 
