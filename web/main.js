@@ -32,11 +32,11 @@ $(function () { // wait for document ready
 
     // create scene to pin and link animation
     new ScrollMagic.Scene({
-            triggerElement: "#pinContainer",
+            triggerElement: "#how-we-work",
             triggerHook: "onLeave",
             duration: "800%"
         })
-        .setPin("#pinContainer")
+        .setPin("#how-we-work")
         .setTween(wipeAnimation)
         //.setTween(wipeAnimation_2)
         .addTo(controller);
