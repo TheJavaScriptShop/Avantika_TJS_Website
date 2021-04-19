@@ -1,51 +1,50 @@
-<!-- <!DOCTYPE html> -->
+ <!-- <!DOCTYPE html> -->
+<html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="main.css" />
-
 </head>
 
 
 <body>
 
-    <!-- Navigation Bar-->
+   <!-- Navigation Bar-->
 
     <!-- Banner on site loading -->
     <div id="initial-banner" class="banner-on-load">
         <img class="mx-auto d-block banner-image banner-animation" src="/assets/TJS_banner.png">
     </div>
     <!-- Logo -->
-    <div id="nav-container">
-        <nav id="main-nav" class="site-header navbar navbar-expand-lg fixed-top navbar-dark d-none">
-            <div class="navbar-brand d-none d-lg-block">
-                <img class="logo" class="align-middle mr-2" width="35" height="35" src="/assets/TJS_logo.jpeg">
-            </div>
-            <div class="navbar-brand d-block d-lg-none d-xl-none">
-                <img class="logo" height="35" width="170" src="/assets/TJS_banner.png">
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <div id="nav-container" class="fixed-top mobile-view-nav">
+      <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark d-none site-header">
+        <div class="navbar-brand d-none d-lg-block">
+            <img class="logo" class="align-middle mr-2" width="35" height="35" src="/assets/TJS_logo.jpeg">
+        </div>
+
+        <div class="navbar-brand d-block d-lg-none d-xl-none">
+            <img class="logo" height="35" width="170" src="/assets/TJS_banner.png">
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
 
-            <!--Navigation Links-->
-            <div class="collapse navbar-collapse m-auto" id="navbarTogglerDemo02">
-                <ul class="navbar-nav m-auto">
-                    <li class="nav-item"><a class="nav-link" href="#intro"> About Us </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#how-we-work"> How We Work</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#tech-stack"> Technologies</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials"> Client Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact-us"> Contact Us</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+        <!--Navigation Links-->
+        <div class="collapse navbar-collapse m-auto" id="navbarTogglerDemo02">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item"><a class="nav-link" href="#intro"> About Us </a></li>
+                <li class="nav-item"><a class="nav-link" href="#how-we-work"> How We Work</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tech-stack"> Technologies</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials"> Client Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact-us"> Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
 
 
     <!-- Grid layout starts here-->
@@ -53,93 +52,79 @@
     <div class="container-fluid p-0">
 
         <!-- Remote Engineering Section-->
-        <div id="intro" class="full-screen intro-remote-eng row justify-content-center px-5 d-flex align-items-center">
+        <div id="intro" class="row justify-content-center px-5 d-flex align-items-center full-screen intro-remote-eng ">
 
             <!-- xs breakpoint -->
-            <div class="col-xs-12 d-block d-sm-none">
-                <div>
-                    <h1 style="font-size:31px" class="re_text_animation_2" data-text="Remote&nbsp;Engineering">Remote
-                        Engineering</h1>
+            <div class="col-xs-12  d-sm-none">
+                <div class="">
+                    <h1 class="intro-section-xs-breakpoint re_text_animation_sm_remote" data-text="Remote">Remote</h1>
+                    <h1 class="intro-section-xs-breakpoint re_text_animation_sm_engg" data-text="Engineering">Engineering</h1>
                     <p>Description on Remote Engineering</p>
                 </div>
             </div>
-            <div class="col-xs-12 d-block d-sm-none">
-                <img src="/assets/undraw_Freelancer_re_irh4.svg" alt="" height="300" width="500">
+            <div class="col-xs-12  d-sm-none">
+                <img class="img-fluid" src="/assets/intro-section.svg" alt="">
             </div>
 
             <!-- sm breakpoint -->
             <div class="col-sm-12 d-none d-sm-block d-md-none">
                 <div>
-                    <h1 style="font-size:35px" class="re_text_animation_2" data-text="Remote&nbsp;Engineering">Remote
-                        Engineering</h1>
+                    <h1 class="intro-section-xs-breakpoint re_text_animation_sm_remote" data-text="Remote">Remote</h1>
+                    <h1 class="intro-section-xs-breakpoint re_text_animation_sm_engg" data-text="Engineering">Engineering</h1>
                     <p>Description on Remote Engineering</p>
                 </div>
             </div>
             <div class="col-sm-12 d-none d-sm-block d-md-none">
-                <img src="/assets/undraw_Freelancer_re_irh4.svg" alt="" height="300" width="500">
+                <img class="img-fluid" src="/assets/intro-section.svg" alt="" height="300" width="500">
             </div>
 
             <!-- md breakpoint -->
             <div class="col-md-6 d-none d-md-block d-lg-none">
                 <div>
-                    <h1 style="font-size:30px" class="re_text_animation_2" data-text="Remote&nbsp;Engineering">Remote
-                        Engineering</h1>
+                    <h1 class="intro-section-xs-breakpoint re_text_animation_sm_remote" data-text="Remote">Remote</h1>
+                    <h1 class="intro-section-xs-breakpoint re_text_animation_sm_engg" data-text="Engineering">Engineering</h1>
                     <p>Description on Remote Engineering</p>
                 </div>
             </div>
             <div class="col-md-6 d-none d-md-block d-lg-none">
-                <img src="/assets/undraw_Freelancer_re_irh4.svg" alt="" height="300" width="500">
+                <img class="img-fluid" src="/assets/intro-section.svg" alt="" height="300">
             </div>
 
             <!-- lg breakpoint -->
             <div class="col-lg-7 d-none d-lg-block d-xl-none">
                 <div>
-                    <h1 style="font-size:38px" class="re_text_animation_2" data-text="Remote&nbsp;Engineering">Remote
+                    <h1 class="intro-section-lg-breakpoint re_text_animation" data-text="Remote&nbsp;Engineering">Remote
                         Engineering</h1>
                     <p>Description on Remote Engineering</p>
                 </div>
             </div>
             <div class="col-lg-5 d-none d-lg-block d-xl-none">
-                <img src="/assets/undraw_Freelancer_re_irh4.svg" alt="" height="300" width="500">
+                <img class="img-fluid" src="/assets/intro-section.svg" alt="" height="300" width="500">
             </div>
 
             <!-- xl breakpoint -->
             <div class="col-xs-6 d-none d-xl-block">
                 <div>
-                    <h1 style="font-size:55px" class="re_text_animation_2" data-text="Remote&nbsp;Engineering">Remote
+                    <h1 class="intro-section-xl-breakpoint re_text_animation" data-text="Remote&nbsp;Engineering">Remote
                         Engineering</h1>
                     <p>Description on Remote Engineering</p>
                 </div>
             </div>
             <div class="col-xs-6 d-none d-xl-block">
-                <img src="/assets/undraw_Freelancer_re_irh4.svg" alt="" height="300" width="500">
+                <img class="img-fluid" src="/assets/intro-section.svg" alt="" height="300" width="500">
             </div>
-
-
         </div>
 
-        <!-- How we work Section-->
-        <!-- 
-        <div class="full-screen how-we-work row justify-content-center px-5 d-flex align-items-center">
-            <div class="col-xs-12 col-md-6">
-                <div class="img img-fluid">
-                    <img src ="./assets/undraw_product_iteration_kjok.svg" alt="" height="300" width="500" >
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6"> 
-                <h2>How we work </h2> 
-            </div>
-        </div> -->
 
-
+        <!-- How we work section -->
         <!-- Horizontal scroll for project lifecycle -->
         <div id="how-we-work">
             <div id="slideContainer">
                 <section class="panel zero">
-                    <div class="full-screen how-we-work row px-5 d-flex align-items-center">
+                    <div class="row px-5 d-flex align-items-center full-screen how-we-work">
                         <div class="col-xs-12 col-md-6">
                             <div class="product_iteration_spinner">
-                                <svg class="rotate1" width="400" height="400" viewBox="0 0 515 515" fill="none"
+                                <svg class="rotate" width="400" height="400" viewBox="0 0 515 515" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M258.296 466.924C256.147 466.907 253.972 466.892 251.837 466.826L251.903 464.681C254.017 464.746 256.178 464.775 258.297 464.777C260.425 464.777 262.594 464.742 264.746 464.673L264.816 466.818C262.64 466.888 260.448 466.924 258.296 466.924ZM238.887 466.017C234.598 465.612 230.267 465.064 226.014 464.388L226.354 462.269C230.562 462.937 234.847 463.48 239.09 463.881L238.887 466.017ZM277.764 465.994L277.559 463.858C281.801 463.453 286.085 462.905 290.293 462.23L290.636 464.349C286.382 465.032 282.052 465.585 277.764 465.994H277.764ZM213.272 461.938C209.073 460.99 204.848 459.891 200.715 458.674L201.325 456.615C205.414 457.82 209.594 458.906 213.749 459.844L213.272 461.938ZM303.375 461.885L302.896 459.793C307.06 458.846 311.239 457.755 315.315 456.548L315.929 458.607C311.808 459.826 307.584 460.929 303.374 461.885H303.375ZM188.393 454.611C184.341 453.128 180.287 451.495 176.344 449.756L177.216 447.793C181.117 449.513 185.127 451.129 189.136 452.596L188.393 454.611ZM328.244 454.527L327.499 452.513C331.483 451.05 335.48 449.435 339.378 447.712L340.252 449.674C336.311 451.416 332.271 453.049 328.244 454.527H328.244ZM164.637 444.137C160.824 442.154 157.016 440.015 153.32 437.783L154.438 435.946C158.095 438.157 161.861 440.271 165.634 442.234L164.637 444.137ZM351.925 444.059L350.928 442.156C354.692 440.195 358.45 438.08 362.097 435.872L363.217 437.706C359.53 439.939 355.731 442.075 351.925 444.059H351.925ZM142.438 430.72C138.907 428.264 135.406 425.659 132.034 422.979L133.377 421.3C136.714 423.952 140.177 426.529 143.671 428.959L142.438 430.72ZM374.081 430.643L372.846 428.884C376.339 426.451 379.798 423.875 383.126 421.226L384.47 422.903C381.106 425.58 377.611 428.184 374.081 430.643V430.643ZM122.148 414.593C118.955 411.705 115.816 408.678 112.82 405.6L114.366 404.105C117.331 407.151 120.437 410.145 123.596 413.003L122.148 414.593ZM394.347 414.518L392.897 412.929C396.049 410.077 399.152 407.081 402.122 404.027L403.668 405.52C400.668 408.607 397.531 411.634 394.347 414.518V414.518ZM104.087 396.036C101.291 392.769 98.5658 389.372 95.9849 385.938L97.7096 384.651C100.263 388.049 102.96 391.411 105.726 394.641L104.087 396.036ZM412.399 395.946L410.76 394.554C413.525 391.321 416.222 387.955 418.775 384.552L420.501 385.837C417.92 389.276 415.195 392.678 412.399 395.946V395.946ZM88.5474 375.346C86.1906 371.75 83.9227 368.036 81.8062 364.307L83.6818 363.251C85.7751 366.939 88.0193 370.615 90.3514 374.172L88.5474 375.346ZM427.941 375.23L426.136 374.058C428.469 370.493 430.712 366.812 432.807 363.115L434.683 364.169C432.567 367.907 430.298 371.628 427.941 375.23V375.23ZM75.7904 352.863C73.9158 348.999 72.145 345.028 70.5271 341.06L72.5226 340.252C74.1236 344.177 75.8756 348.106 77.7301 351.928L75.7904 352.863ZM440.701 352.695L438.762 351.762C440.615 347.934 442.368 343.995 443.971 340.051L445.967 340.856C444.347 344.843 442.576 348.826 440.701 352.695V352.695ZM66.0302 328.928C64.6675 324.851 63.4225 320.68 62.3296 316.531L64.4134 315.986C65.4943 320.09 66.7261 324.216 68.0741 328.249L66.0302 328.928ZM450.456 328.701L448.411 328.026C449.751 323.997 450.979 319.869 452.057 315.757L454.142 316.3C453.051 320.457 451.811 324.629 450.456 328.701V328.701ZM59.4395 303.925C58.6163 299.713 57.92 295.418 57.3693 291.159L59.5057 290.884C60.0506 295.098 60.7396 299.347 61.5538 303.514L59.4395 303.925ZM457.017 303.689L454.902 303.282C455.71 299.116 456.395 294.866 456.935 290.649L459.072 290.921C458.526 295.183 457.834 299.479 457.017 303.689V303.689ZM56.1238 278.289C55.8477 274.01 55.7052 269.661 55.7004 265.362L57.8548 265.36C57.8595 269.614 58.0004 273.917 58.2739 278.15L56.1238 278.289ZM460.303 278.049L458.153 277.913C458.421 273.683 458.557 269.38 458.557 265.125L458.555 264.654H460.71L460.711 265.118C460.711 269.425 460.573 273.773 460.303 278.049ZM58.244 252.571L56.0939 252.439C56.361 248.152 56.7697 243.821 57.3088 239.565L59.4463 239.833C58.9124 244.045 58.508 248.33 58.244 252.571ZM458.123 251.867C457.843 247.624 457.424 243.339 456.876 239.134L459.011 238.857C459.565 243.108 459.99 247.437 460.273 251.726L458.123 251.867ZM61.4639 227.2L59.3485 226.794C60.1611 222.581 61.1237 218.337 62.2081 214.181L64.293 214.72C63.22 218.833 62.2681 223.031 61.4639 227.2ZM454.811 226.507C453.99 222.336 453.022 218.141 451.937 214.038L454.02 213.491C455.118 217.638 456.095 221.878 456.925 226.094L454.811 226.507ZM67.9252 202.449L65.8793 201.776C67.2315 197.696 68.7368 193.605 70.3541 189.613L72.3517 190.417C70.7517 194.366 69.2627 198.413 67.9252 202.449ZM448.264 201.779C446.911 197.75 445.41 193.714 443.801 189.782L445.796 188.972C447.422 192.946 448.94 197.026 450.306 201.098L448.264 201.779ZM77.5481 178.698L75.6063 177.767C77.475 173.896 79.4957 170.033 81.6116 166.287L83.4893 167.34C81.3955 171.047 79.3968 174.868 77.5481 178.698ZM438.581 178.113C436.725 174.301 434.719 170.494 432.615 166.797L434.49 165.738C436.616 169.474 438.644 173.323 440.518 177.177L438.581 178.113ZM90.1479 156.388L88.3418 155.217C90.6912 151.619 93.19 148.047 95.7683 144.602L97.4955 145.885C94.9446 149.293 92.4721 152.827 90.1479 156.388ZM425.933 155.883C423.602 152.335 421.122 148.812 418.562 145.413L420.285 144.125C422.873 147.561 425.379 151.121 427.736 154.707L425.933 155.883ZM105.499 135.873L103.858 134.483C106.649 131.212 109.582 127.988 112.577 124.9L114.126 126.392C111.163 129.447 108.261 132.638 105.499 135.873ZM410.534 135.431C407.764 132.204 404.852 129.023 401.882 125.977L403.426 124.481C406.429 127.559 409.371 130.774 412.17 134.036L410.534 135.431ZM123.339 117.478L121.889 115.891C125.077 112.998 128.396 110.172 131.755 107.494L133.102 109.17C129.778 111.82 126.494 114.616 123.339 117.478V117.478ZM392.641 117.089C389.482 114.239 386.188 111.452 382.849 108.805L384.192 107.125C387.565 109.801 390.894 112.617 394.086 115.498L392.641 117.089ZM143.373 101.5L142.137 99.7417C145.662 97.2799 149.314 94.8998 152.992 92.6671L154.113 94.5005C150.474 96.7096 146.861 99.0645 143.373 101.5ZM372.547 101.158C369.04 98.7254 365.415 96.3784 361.772 94.1818L362.887 92.3453C366.569 94.5649 370.234 96.9371 373.778 99.3957L372.547 101.158ZM165.276 88.2026L164.276 86.3011C168.084 84.3105 172.01 82.4163 175.942 80.6716L176.819 82.6328C172.928 84.3587 169.044 86.233 165.276 88.2026ZM350.568 87.9081C346.785 85.9458 342.887 84.0804 338.981 82.3634L339.851 80.399C343.798 82.1344 347.739 84.0202 351.563 86.0034L350.568 87.9081ZM188.692 77.8172L187.944 75.8035C191.983 74.3145 196.125 72.9371 200.255 71.7101L200.87 73.7678C196.785 74.9811 192.688 76.3439 188.692 77.8172H188.692ZM327.055 77.5735C323.05 76.1138 318.948 74.7658 314.861 73.5676L315.469 71.5078C319.6 72.719 323.747 74.0818 327.795 75.5577L327.055 77.5735ZM213.286 70.5104L212.805 68.4182C216.996 67.4611 221.281 66.6272 225.541 65.938L225.886 68.0576C221.671 68.7389 217.432 69.5639 213.286 70.5104ZM302.434 70.3543C298.28 69.4213 294.038 68.6111 289.825 67.9454L290.162 65.8248C294.421 66.4978 298.709 67.317 302.907 68.2599L302.434 70.3543ZM238.618 66.4144L238.41 64.2781C242.687 63.8646 247.044 63.5821 251.358 63.439L251.43 65.5847C247.16 65.7263 242.85 66.0056 238.618 66.4144V66.4144ZM277.087 66.3479C272.849 65.9532 268.537 65.6891 264.273 65.5628L264.337 63.4171C268.646 63.5449 273.004 63.8117 277.287 64.2106L277.087 66.3479Z"
@@ -233,23 +218,17 @@
             </div>
         </div>
 
+
         <!-- Tech-stack Section-->
 
-        <div id="tech-stack" class=" card-deck tech-stack">
-            <!-- <div class=" tech-stack-card card text-center  py-3">
-                        <div class="card-body">
-                            <h2 class="card-text">What we have done so far...</h2>
-                        </div>
-                        <img src="/assets/undraw_project_completed_w0oq.svg" alt="" height="250" width="250"
-                            class="card-img-top">
-                    </div> -->
-            <div class="tech-stack-card card ">
+        <div id="tech-stack" class="card-deck tech-stack">
+            <div class="card tech-stack-card">
                 <div id="icon-container" class="card-body">
                     <div id="element-1" class="tech-icon">
                         <span data-toggle="tooltip"
                             title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
                             data-placement="right" data-animation="false">
-                            <img src="/assets/icons8-javascript.svg" alt="" />
+                            <img src="/assets/icon-javascript.svg" alt="" />
                         </span>
                     </div>
 
@@ -257,21 +236,21 @@
                         <span data-toggle="tooltip"
                             title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
                             data-placement="left" data-animation="false">
-                            <img src="/assets/icons8-npm.svg" alt="" />
+                            <img src="/assets/icon-npm.svg" alt="" />
                         </span>
                     </div>
                     <div id="element-3" class="tech-icon">
                         <span data-toggle="tooltip"
                             title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
                             data-placement="top" data-animation="false">
-                            <img src="/assets/icons8-postgresql (1).svg" alt="" />
+                            <img src="/assets/icon-postgresql.svg" alt="" />
                         </span>
                     </div>
                     <div id="element-4" class="tech-icon">
                         <span data-toggle="tooltip"
                             title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
                             data-placement="left" data-animation="false">
-                            <img src="/assets/icons8-react-native (1).svg" alt="" />
+                            <img src="/assets/icon-react.svg" alt="" />
                         </span>
                     </div>
 
@@ -279,7 +258,7 @@
                         <span data-toggle="tooltip"
                             title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
                             data-placement="right" data-animation="false">
-                            <img src="/assets/icons8-python.svg" alt="" />
+                            <img src="/assets/icon-python.svg" alt="" />
                         </span>
                     </div>
                 </div>
@@ -289,9 +268,14 @@
 
         <!-- Testimonials Section-->
         <div id="testimonials">
-            <div class=" container-fluid full-screen testimonials">
+            <div class="container-fluid full-screen testimonials">
+                <div class="row">
+                  <div class="col">
+                    <h1>Testimonials</h1>
+                </div>
+                </div>
                 <div class="row justify-content-start">
-                    <div id="reveal1" class="box left-box col-xs-12 col-md-7 mt-4">
+                    <div id="reveal1" class="col-xs-12 col-md-7 mt-4 box left-box">
                         <p> 1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                             has been
                             the industry's standard dummy text ever since the 1500s, when an unknown printer took a
@@ -300,14 +284,14 @@
                     </div>
                 </div>
                 <div class="row justify-content-end">
-                    <div id="reveal2" class="box right-box col-xs-12 col-md-7 mt-4">
+                    <div id="reveal2" class="col-xs-12 col-md-7 mt-4 box right-box">
                         <p>2. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been
                             the industry's standard dummy text ever since the 1500s</p>
                     </div>
                 </div>
                 <div class="row justify-content-start">
-                    <div id="reveal3" class="box left-box col-xs-12 col-md-7 mt-4 ">
+                    <div id="reveal3" class="col-xs-12 col-md-7 mt-4 box left-box">
                         <p> 3. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                             has been
                             the industry's standard dummy text ever since the 1500s, when an unknown printer took a
@@ -318,14 +302,14 @@
                     </div>
                 </div>
                 <div class="row justify-content-end">
-                    <div id="reveal4" class="box right-box col-xs-12 col-md-7 mt-4">
+                    <div id="reveal4" class="col-xs-12 col-md-7 mt-4 box right-box">
                         <p>4. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been
                             the industry's standard dummy text ever since the 1500s</p>
                     </div>
                 </div>
                 <div class="row justify-content-start">
-                    <div id="reveal5" class="box left-box col-xs-12 col-md-7 mt-4 ">
+                    <div id="reveal5" class="col-xs-12 col-md-7 mt-4 box left-box">
                         <p> 5. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                             has been
                             the industry's standard dummy text ever since the 1500s, when an unknown printer took a
@@ -336,7 +320,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-end">
-                    <div id="reveal6" class="box right-box col-xs-12 col-md-7 mt-4 ">
+                    <div id="reveal6" class="col-xs-12 col-md-7 mt-4 box right-box">
                         <p> 6. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                             has been
                             the industry's standard dummy text ever since the 1500s, when an unknown printer took a
@@ -347,7 +331,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-start">
-                    <div id="reveal7" class="box left-box col-xs-12 col-md-7 mt-4 mb-4 ">
+                    <div id="reveal7" class="col-xs-12 col-md-7 mt-4 mb-4 box left-box">
                         <p> 7. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                             has been
                             the industry's standard dummy text ever since the 1500s, when an unknown printer took a
@@ -357,55 +341,31 @@
                             also the leap into electronic typesetting, remaining essentially unchanged./p>
                     </div>
                 </div>
-
             </div>
-
-
-
-
-            <!-- <div class="col-xs-12 col-lg-4">
-                    <div class="card text-center">
-                        <img src="./assets/undraw_reviews_lp8w.svg" alt="" height="200" width="150">
-                        <h2> <b>Client Testimonials</b></h2>
-                        <p> Client testionials - card layout probably - horizontal slide</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-lg-8 card">
-                    <div class="card-columns">
-                        <div class="card">
-                             <img class="card-img-top" src=".../100px160/" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Testimonial 1</h5>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <img class="card-img-top" src=".../100px160/" alt="Card image cap"> 
-                            <div class="card-body">
-                                <h4 class="card-title">Testimonial 2</h4>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
         </div>
     </div>
 
 
     <!-- Contact Us Section -->
-    <div id="contact-us" class="full-screen contact-us row justify-content-around px-5 d-flex align-items-center">
-        <div class="col-xs-12 col-md-5">
+
+    <div id="contact-us" class="row px-5 d-flex align-items-center full-screen contact-us">
+        <div class="col-xs-12 col-md-6">
+            <div class="card calendly-card">
+                <div class="card-body">
             <h3 class="display-4"> Contact us...</h3>
-            <img src="/assets/undraw_Calendar_re_ki49.svg" alt="" height="300" width="400">
+            <img class="card-img img-fluid" src="/assets/contact-us.svg" alt="" height="300" width="400">
         </div>
-        <div class="col-xs-12 col-md-7">
-            <div class="mt-5">
+        </div>
+    </div>
+        <div class="col-xs-12 col-md-6 ">
+            <div class="card calendly-card">
+              <div class="card-body mt-5 mx-2">
                 <div class="calendly-inline-widget calendlyStyles" data-url="https://calendly.com/webmaster-118"></div>
+            </div>
             </div>
         </div>
     </div>
-</div>
+    </div>
 
 
     <!-- Scripts -->
@@ -415,16 +375,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-    <script src="section_3.js"></script>
-    <script src="section_4.js"></script>
+    <script src="techStack.js"></script>
+    <script src="testimonials.js"></script>
     <script src="main.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
         integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();

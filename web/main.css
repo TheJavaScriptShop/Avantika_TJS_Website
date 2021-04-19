@@ -3,79 +3,65 @@ html,body {
   margin : 0px;
 }
 
-body{
+body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.full-screen {
-  height: 100vh; 
-  width: 100vw;
+.row {
+  margin : 0  !important;
 }
 
-.site-header {
-  /* for making navbar translucent */
-  background-color: rgba(0, 0, 0, .85);
-  backdrop-filter: saturate(180%) blur(20px);
-}
-nav{
+nav {
   position: absolute;
 }
 
-.navbar-nav > li{
+.navbar-nav > li {
     padding-left:20px;
     padding-right:20px;
   }
 
-.navbar-collapse > ul{
+.navbar-collapse > ul {
   text-align :center;
 }
-nav a{
+
+nav a {
     color : white;
     text-decoration: none;
     margin-right: 10px;
 		font-size: 16px;
 }
 
-nav a:hover{
+nav a:hover {
   opacity: .5;
   transition: .3s;
   color: whitesmoke;
   text-decoration: none;
 }
 
-nav a:active{
+nav a:active {
   color: whitesmoke;
+}
+
+.mobile-view-nav {
+  width: 100vw;
+}
+
+.full-screen {
+  height: 100vh;
+  width: 100vw;
+}
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  backdrop-filter: saturate(180%) blur(20px);
 }
 
 .intro-remote-eng {
     background-color: #ffeb4c;
-  }
+ }
 
-.re_text_animation_1 {
-  font-size: 60px;
-  font-weight: 700;
-  letter-spacing: 5px;
-  position: relative;
-  animation: text 3s 1;
-}
-
-@keyframes text {
-  0% {
-    color : black;
-    margin-bottom: -40px;
-  }
-  30% {
-    letter-spacing: 25px;
-    margin-bottom: -40px;
-  }
-  85% {
-    letter-spacing: 5px;
-    margin-bottom: -40px;
-  }
-}
-
-.re_text_animation_2 {
-  /* font-size: 60px; */
+/* text animation for screens above md size */
+.re_text_animation {
   letter-spacing: 4px;
   color : #ffeb4c;
   position: relative;
@@ -83,7 +69,7 @@ nav a:active{
   text-transform: uppercase;
 }
 
-.re_text_animation_2::before {
+.re_text_animation::before {
   content: attr(data-text);
   position: absolute;
   top : 0;
@@ -106,11 +92,109 @@ nav a:active{
   100% {
     width : 100%;
   }
-
 }
 
+/* separate animation for xs, sm, md screen sizes - broken into two lines */
 
-.how-we-work{
+.re_text_animation_sm_remote {
+  letter-spacing: 4px;
+  color : #ffeb4c;
+  position: relative;
+  -webkit-text-stroke: 0.2vw #000000;
+  text-transform: uppercase;
+}
+
+.re_text_animation_sm_remote::before {
+  content: attr(data-text);
+  position: absolute;
+  top : 0;
+  left : 0;
+  width: 0;
+  height: 100%;
+  color : #000000;
+  -webkit-text-stroke: 0vw  #ffeb4c;
+  border-right: 4px solid;
+  overflow : hidden;
+  animation: animate-remote 4s linear forwards;
+}
+
+@keyframes animate-remote
+{
+  0%{
+    width : 0;
+  }
+
+  50%{
+    width: 50%;
+  }
+
+  100%{
+    width: 50%;
+    border-right: 4px solid #ffeb4c;
+  }
+}
+
+/* separate animation for xs, sm, md screen sizes - broken into two lines */
+.re_text_animation_sm_engg {
+  letter-spacing: 4px;
+  color : #ffeb4c;
+  position: relative;
+  -webkit-text-stroke: 0.2vw #000000;
+  text-transform: uppercase;
+}
+
+.re_text_animation_sm_engg::before {
+  content: attr(data-text);
+  position: absolute;
+  top : 0;
+  left : 0;
+  width: 0;
+  height: 100%;
+  color : #000000;
+  -webkit-text-stroke: 0vw  #ffeb4c;
+  overflow : hidden;
+  animation: animate-engg 5s linear forwards;
+  animation-delay: 4s;
+}
+
+@keyframes animate-engg
+{
+  0%{
+    width : 0;
+    border-right: 4px solid;
+  }
+
+  80% {
+    width : 80%;
+  }
+  
+  100%{
+    width: 80%;
+    border-right: 4px solid #ffeb4c;
+  }
+}
+
+.intro-section-xs-breakpoint {
+  font-size : 20px;
+}
+
+.intro-section-sm-breakpoint {
+  font-size : 35px;
+}
+
+.intro-section-md-breakpoint {
+  font-size : 30px;
+}
+
+.intro-section-lg-breakpoint {
+  font-size : 38px;
+}
+
+.intro-section-xl-breakpoint {
+  font-size : 55px;
+}
+
+.how-we-work {
   background-color:#262626;
   font-size: 32px;
   color: #ffeb4c;
@@ -118,13 +202,14 @@ nav a:active{
   display: block;
 }
 
-.rotate1 {
-  animation: rotation1 20s infinite linear;
+.rotate {
+  animation: rotation 20s infinite linear;
   transform-origin: 50% 50%;
   -webkit-transform-origin: 50% 50%;
   -moz-transform-origin: 50% 50%;
 }
-@keyframes rotation1 {
+
+@keyframes rotation {
   from {
     transform: rotate(0deg);
   }
@@ -133,19 +218,15 @@ nav a:active{
   }
 }
 
-.tech-stack{
+.tech-stack {
   height: 100vh;
-  /* background-color: #000000; */
-  /* background-image: linear-gradient(red, yellow); */
   background-image: linear-gradient(rgb(0,0,0) , rgb(0,19,43));
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-
-.tech-stack-card{
+.tech-stack-card {
   border-radius: 0px 0px 0px 0px;
-  /* background-color: #000000; */
   background-image: linear-gradient(rgb(0,0,0) , rgb(0,19,43));
   color : #ffeb4c;
 }
@@ -158,14 +239,15 @@ nav a:active{
 }
 
 .tech-icon:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .icon-Container {
   display: flex;
 }
+
 #element-1, #element-2, #element-3, #element-4, #element-5 {
   position: absolute;
   width: 100px;
@@ -174,7 +256,7 @@ nav a:active{
 
 #element-1 {
   top: 40%;
-  left: 20%; 
+  left: 20%;
 }
 
 #element-2 {
@@ -195,37 +277,27 @@ nav a:active{
 #element-5 {
   top: 20%;
   left: 65%;
-}  /* width: 500px; */
-
-
+}
 
 .testimonials{
   background-color:#333333;
   color : black;
   background-attachment: scroll;
-  /* position: fixed; */
   top: 0;
   left: 0;
   overflow: auto;
-  background-image: url('/assets/Whatsapp-Wallpaper-120.jpeg');
+  background-image: url('/assets/chat-section-background.jpeg');
   backdrop-filter: blur(5px);
 }
 
-
-.box{
+.box {
   border-radius: 15px;
-  /* margin: 10px auto; */
   background: #faec4b;
   color: #333333;
   padding: 20px;
   text-align: center;
   font-weight: 500;
-  /* position: relative; */
-  /* display: block; */
-  /* float: left; */
-  
 }
-
 
 /* right speech bubble */
 .right-box:after {
@@ -239,7 +311,6 @@ nav a:active{
   border-bottom: 15px solid transparent;
   right: -16px;
   top: 0px;
-  /* float:left; */
 }
 
 
@@ -255,7 +326,6 @@ nav a:active{
   border-bottom: 15px solid transparent;
   left: -16px;
   top: 0px;
-  /* float: right; */
 }
 
 .spacer {
@@ -267,36 +337,33 @@ nav a:active{
 #reveal1, #reveal2, #reveal3, #reveal4, #reveal5,#reveal6,#reveal7 {
   opacity: 0;
   -webkit-transform: scale(0.9);
-       -moz-transform: scale(0.9);
-          -ms-transform: scale(0.9);
-           -o-transform: scale(0.9);
-                  transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
   -webkit-transition: all 1s ease-in-out;
-       -moz-transition: all 1s ease-in-out;
-          -ms-transition: all 1s ease-in-out;
-           -o-transition: all 1s ease-in-out;
-                  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
+
 #reveal1.visible, #reveal2.visible, #reveal3.visible, #reveal4.visible, #reveal5.visible, #reveal6.visible, #reveal7.visible  {
   opacity: 1;
   -webkit-transform: none;
-       -moz-transform: none;
-          -ms-transform: none;
-           -o-transform: none;
-                  transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
 }
 
-.contact-us{
-  background-color:#faec4b ;
+.contact-us {
+  background-color:#ffffff;
 }
-
 
 /* Slides scrollmagic CSS starts here */
-
-
 .slides-h1 {
   margin-bottom: 50% 50% 50% 50%;
-  
 }
 
 #how-we-work {
@@ -315,6 +382,7 @@ nav a:active{
 	height: 100%;
   margin : 0px;
 }
+
 .panel {
   height: 100%;
 	width: 14.2858%; /* relative to parent -> 25% of 400% = 100% of window width */
@@ -330,41 +398,38 @@ nav a:active{
 }
 
 .one {
-  background-color: #ffeb4c;
+  background-color: #ffffff;
   color :#333333;
 }
+
 .two {
   background-color: #333333;
-  color: #ffeb4c;
-
+  color: #ffffff;
 }
+
 .three {
-  background-color: #ffeb4c;
+  background-color: #ffffff;
   color :#333333;
-
 }
+
 .four {
   background-color: #333333;
-  color: #ffeb4c;
+  color: #ffffff;
 }
 
 .five {
-  background-color: #ffeb4c;
+  background-color: #ffffff;
   color : #333333;
 }
 
 .six {
   background-color: #333333;
-  color: #ffeb4c;
+  color: #ffffff;
 }
 
 .product_iteration_spinner {
     margin: 10%;
     padding: 10%;
-  }
-
-.row {
-  margin : 0  !important;
 }
 
 .banner-on-load {
@@ -377,9 +442,9 @@ nav a:active{
 
 .banner-animation {
   background-color: #000000;
-  -webkit-animation: fadeout 4s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeout 4s; /* Firefox < 16 */
-  -ms-animation: fadeout 4s; /* Internet Explorer */
+  -webkit-animation: fadeout 4s;
+  -moz-animation: fadeout 4s;
+  -ms-animation: fadeout 4s;
   animation: fadeout 4s;
 }
 
@@ -388,19 +453,16 @@ nav a:active{
   to   { opacity: 0; }
 }
 
-/* Firefox < 16 */
 @-moz-keyframes fadeout{
   from { opacity: 1; }
   to   { opacity: 0; }
 }
 
-/* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadeout {
   from { opacity: 1; }
   to   { opacity: 0; }
 }
 
-/* Internet Explorer */
 @-ms-keyframes fadeout {
   from { opacity: 1; }
   to   { opacity: 0; }
@@ -411,8 +473,7 @@ nav a:active{
   height: 100px;
 }
 
-
-.tooltip .tooltip-inner{
+.tooltip .tooltip-inner {
   max-width:310px;
   padding:10px 8px;
   color: #faec4b ;
@@ -422,3 +483,8 @@ nav a:active{
   -moz-border-radius:20px;
   border-radius:20px;
   }
+
+  .calendly-card {
+    height: 70%;
+  }
+
