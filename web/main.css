@@ -4,7 +4,8 @@ html,body {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 .row {
@@ -195,9 +196,9 @@ nav a:active {
 }
 
 .how-we-work {
-  background-color:#262626;
+  background-color:#fff;
   font-size: 32px;
-  color: #ffeb4c;
+  color: #ffffff;
   position: relative;
   display: block;
 }
@@ -219,16 +220,22 @@ nav a:active {
 }
 
 .tech-stack {
-  height: 100vh;
-  background-image: linear-gradient(rgb(0,0,0) , rgb(0,19,43));
-  padding-top: 25px;
-  padding-bottom: 25px;
+  background-color: #fff;
+}
+
+.tech-stack-header {
+  background-color :#fff;
 }
 
 .tech-stack-card {
-  border-radius: 0px 0px 0px 0px;
+  height: 100%;
+  border-radius: 3px 3px 3px 3px;
   background-image: linear-gradient(rgb(0,0,0) , rgb(0,19,43));
-  color : #ffeb4c;
+  color : #ffffff;
+}
+
+.tech-stack-row-style {
+  height: 60%;
 }
 
 .tech-icon {
@@ -279,14 +286,19 @@ nav a:active {
   left: 65%;
 }
 
+.testimonials-header {
+  background-color: #fff;
+  color: #faec4b;
+}
+
 .testimonials{
-  background-color:#333333;
+  background-color: #fff;
   color : black;
   background-attachment: scroll;
   top: 0;
   left: 0;
   overflow: auto;
-  background-image: url('/assets/chat-section-background.jpeg');
+  /* background-image: url('/assets/chat-section-background.jpeg'); */
   backdrop-filter: blur(5px);
 }
 
@@ -294,7 +306,7 @@ nav a:active {
   border-radius: 15px;
   background: #faec4b;
   color: #333333;
-  padding: 20px;
+  padding: 0px 20px 20px 5px;
   text-align: center;
   font-weight: 500;
 }
@@ -328,9 +340,24 @@ nav a:active {
   top: 0px;
 }
 
-.spacer {
-  margin-left: 20px;
-  margin-right: 20px;
+.chat-bubble-icon {
+  display : flex;
+}
+
+#icon-circle {
+  background: #800080;
+  color : #ffffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+#icon-name {
+  color :#800080;
+  padding-left: 8px;
+  font-size : 20px;
+  font-weight : 70;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -372,14 +399,14 @@ nav a:active {
   overflow: hidden;
   -webkit-perspective: 1000;
   perspective: 1000;
-  background-color:#262626;
+  background-color:#fff;
   margin : 0px;
   padding : 0;
 }
 
 #slideContainer {
   width: 700%; /* to contain 7 panels, each with 100% of window width */
-	height: 100%;
+	height: 85%;
   margin : 0px;
 }
 
@@ -387,9 +414,9 @@ nav a:active {
   height: 100%;
 	width: 14.2858%; /* relative to parent -> 25% of 400% = 100% of window width */
 	float: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .zero {
@@ -487,4 +514,42 @@ nav a:active {
   .calendly-card {
     height: 70%;
   }
+
+/* make each section 100% when in view */
+.section-slide-panel-width {
+  width: 100%;
+}
+
+
+
+.modal-backdrop {
+  background-color: #000;
+}
+
+.modal-content { 
+  background: #000 !important; 
+  color: #fff;
+
+}
+
+.modal-dialog {
+  max-width : 100% !important;
+  margin-left : 0;
+  margin-right: 0;
+}
+
+.close {
+  color: #fff !important;
+  font-size : 3rem;
+  opacity: 1;
+}
+
+a[href*=”modal”] {
+  color : #000 !important;
+}
+
+.modal-body  a:link {
+  color : #fff !important;
+  text-decoration: underline  !important;
+}
 
